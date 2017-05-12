@@ -1,0 +1,84 @@
+@import "variables.less";
+section.item.hot-fields-finance{
+  .row-bg("../images/hot-fields-finance-bg.png");
+  .content{
+    .flex();
+    justify-content: space-around;
+    align-items: flex-start;
+    height:100%;
+    flex-direction: column;
+    text-align: left;
+    .course{
+      width: 100%;
+      .course-wrapper{
+        .flex();
+        padding-left:50px;
+        ul{
+          flex:1;
+          list-style-type: none;
+          li{
+            padding:5px 0px;
+            &:before{
+              content:url("../images/crossing.png");
+              width:21px;
+              height:21px;
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-dpr="2"],[data-dpr="3"]{
+  section.item.hot-fields-finance{
+    background-size: 100% auto;
+    background-color: #ffffff;
+
+    &>.header{
+      text-align: center;
+    }
+    .content{
+      width:100%;
+      height:auto;
+      .margin(400,0,0);
+
+      .title{
+        text-align: center;
+        color:#000000 !important;
+        width:100%;
+      }
+      .info{
+        color:#000000 !important;
+        text-align: left;
+        width:100%;
+        line-height: 1.5;
+        .padding(30,0,30);
+      }
+      .course-include{
+        color:#000000 !important;
+      }
+      .course-wrapper{
+        color:#000000 !important;
+        padding-left:0px;
+        align-items: flex-start;
+        ul{
+          li{
+            &:before{
+              content:"・";
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+[data-dpr="3"]{
+  section.item.hot-fields-finance{
+    .content{
+      .margin(400,0,0);
+    }
+  }
+}

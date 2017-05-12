@@ -1,0 +1,102 @@
+@import "variables.less";
+
+section.sydney-uni.item {
+  background-color: #ffffff;
+
+  .content {
+
+    padding-top: 50px !important;
+    .flex();
+    .pic {
+      flex: 1;
+      .flex();
+      flex-direction: column;
+      .uni-logo{
+
+        height: 110px;
+        width: auto;
+        margin-bottom:20px;
+
+      }
+      .uni-pic{
+        margin-bottom: 73px;
+
+          width:500px;
+          height:500px;
+
+      }
+    }
+    .detail {
+      flex: 1;
+      margin-left: 20px;
+      .uni-name {
+        &>span{
+          vertical-align: middle;
+        }
+        .uni-logo {
+          width: 337px;
+          height: auto;
+          vertical-align: middle;
+          display: inline;
+        }
+      }
+      .advantages {
+        ul, dl {
+          list-style: none;
+
+        }
+        dl {
+          .flex();
+        }
+        dt {
+          width: 84px;
+          height: 106px;
+          margin-right: 20px;
+          background-image: url("../images/list-icons.png");
+          &.first {
+            background-position: 0 0;
+          }
+          &.second {
+            background-position: 0 -106px;
+          }
+          &.third {
+            background-position: 0 -212px;
+          }
+          &.forth {
+            background-position: 0 -318px;
+          }
+        }
+        dd {
+          flex: 1;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+[data-dpr="2"],[data-dpr="3"]{
+  section.sydney-uni.item{
+    .content {
+      padding-top: 0px !important;
+      flex-direction: column;
+      .pic{
+        text-align: center;
+        width: 100%;
+        display: block;
+        .uni-logo{
+          display: none;
+        }
+        .uni-pic{
+          margin-bottom: 0px;
+        }
+      }
+      .detail{
+        .padding(50,0,0,0);
+
+        .advantages{
+          .padding(0,0,0,0);
+        }
+      }
+    }
+  }
+}

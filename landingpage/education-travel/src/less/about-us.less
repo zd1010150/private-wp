@@ -1,0 +1,75 @@
+@import "variables.less";
+
+section.item.about-us{
+  .row-bg("../images/about-us-bg.png");
+  .content{
+    .font-white();
+    .flex();
+    height:100%;
+    .about-us-info{
+      flex:1;
+      text-align: left;
+      padding-right: 60px;
+      padding:0 100px;
+    }
+    .form{
+      flex:1;
+      padding:0 200px;
+      .form-wrapper{
+        .row-bg("../images/form-bg.png");
+           padding:     80px 50px 62px;
+        .flex();
+        form{
+          width:100%;
+          .form-group{
+            .flex();
+            width:100%;
+            .control-label{
+              width:80px;
+            }
+            .input-wrapper{
+              flex:1;
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .note{
+        text-align: left;
+        padding-left: 1em;
+      }
+    }
+  }
+}
+[data-dpr="2"],[data-dpr="3"]{
+  section.item.about-us{
+    background-image: none;
+    background-color: rgba(255,255,255,1);
+    .content{
+      .font-black();
+      height:auto;
+      .padding(0);
+      flex-direction: column;
+      .about-us-info{
+        .padding(0,60,60);
+        .title{
+          text-align: center;
+        }
+      }
+      .form{
+        .padding(60,0,100);
+        width:100%;
+        background-color: #000000;
+        color:white;
+        .form-wrapper{
+          background: none;
+          .padding(20,160,20,150);
+
+        }
+        .note{
+          text-align: center;
+        }
+      }
+    }
+  }
+}

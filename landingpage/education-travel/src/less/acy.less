@@ -1,0 +1,19 @@
+@import "variables.less";
+
+section.item.acy{
+  .row-bg("../images/acy-sydney-bg.png");
+  .content{
+    padding-top: 50px;
+  }
+}
+[data-dpr="2"],[data-dpr="3"]{
+
+  section.item.acy {
+    background-size: auto 100%;
+    .padding(50,0);
+    .content {
+      .padding(0, 0);
+      .height(500);
+    }
+  }
+}
