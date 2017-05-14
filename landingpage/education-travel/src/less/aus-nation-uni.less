@@ -6,21 +6,23 @@
   & > .header {
     text-align: center;
     img {
-      height: 160px;
+      height: 100px;
       width: auto;
     }
 
   }
   .content {
 
-    padding-top: 50px !important;
+    padding-top: 10px !important;
     .flex();
     .pic {
       flex: 1;
       margin-right: 20px;
+      .flex();
+      justify-content: center;
       img{
-        width:500px;
-        height:500px;
+        width:40%;
+        height:auto;
       }
     }
     .detail {
@@ -28,25 +30,26 @@
       .uni-name {
         width:100%;
         .flex();
+        justify-content: center;
         &>span{
           vertical-align: middle;
         }
         .uni-logo {
-          width: 300px;
+          width: 70%;
           height: auto;
           vertical-align: middle;
           display: inline;
         }
       }
       .advantages {
-        padding-top: 37px;
-        padding-right: 106px;
+        padding-top:10px;
         ul, dl {
           list-style: none;
 
         }
         dl {
           .flex();
+          margin-bottom: 5px;
         }
         dt {
           width: 84px;

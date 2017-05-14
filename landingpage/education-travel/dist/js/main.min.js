@@ -16,7 +16,7 @@ $(document).ready(function () {
           $("footer.cn-fixed-page-footer.page-footer").remove();
         },
         initVerticalCarousal:function(){
-
+          
             if(!isMobile.any){
                 $('<link rel="stylesheet" href="./dist/css/page.min.css">').appendTo($("head"));
                 $('<script src="./dist/js/vertical_carousal.min.js"></script>').appendTo($("head"));
