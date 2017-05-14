@@ -16,8 +16,8 @@ $(document).ready(function () {
           $("footer.cn-fixed-page-footer.page-footer").remove();
         },
         initVerticalCarousal:function(){
-            var dpr = window.devicePixelRatio || 1;
-            if(dpr == 1){
+
+            if(!isMobile.any){
                 $('<link rel="stylesheet" href="./dist/css/page.min.css">').appendTo($("head"));
                 $('<script src="./dist/js/vertical_carousal.min.js"></script>').appendTo($("head"));
             }else{
@@ -118,6 +118,3 @@ $(document).ready(function () {
     };
     app.init();
 });
-
-
-

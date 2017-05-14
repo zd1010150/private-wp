@@ -10,7 +10,7 @@ var concatCss = require('gulp-concat-css');
 var path = require('path');
 
 //landingpage path
-var LANDING_PATH = "./landingpage/forex-competition-201705/";
+var LANDING_PATH = "./landingpage/education-travel/";
 
 //less的配置路径
 var LESS_FILE_IMPORT_PATHES = LANDING_PATH+"src/less/*.less";
@@ -68,5 +68,5 @@ gulp.task('compress-web-js',function(){
 	gulp.src([WEBTHEME_PATH , WEBTHEME_BUNDLEPATH])
 	.pipe(concatCss('style.min.css'))
 	.pipe(cleanCSS())
-    .pipe(gulp.dest("./wp-content/themes/AKD/assets/css/"));	
+    .pipe(gulp.dest("./wp-content/themes/AKD/assets/css/"));
 });
